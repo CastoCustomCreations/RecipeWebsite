@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="Styles/SignupStyle.css">
+<title>Sign Up</title>
+<script>
+Thanksmsg = "Thanks for signing up";</script>
+<h1>Meatballs Galore!</h1>
+<!-- Mouse rollover image change-->
+<img src="Images/RecipeBox1_1.jpg" class ="logo" alt="Picture1&2"
+    
+         onmouseover="this.src='Images/RecipeBox2_1.jpg';"
+         onmouseout="this.src='Images/RecipeBox1_1.jpg';"/>
+	
+	<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Recipes
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	  <a href="recipes/Buffalo Chicken Meatballs/">Buffalo Chicken Meatballs</a>
+      <a href="recipes/Chicken Cordon Bleu Meatballs/">Chicken Cordon Bleu Meatballs</a>
+      <a href="recipes/FrenchOnionMeatballs/FrenchOnionMeatballs.html">FrenchOnionMeatballs</a>
+	  <a href="recipes/Honey Bourbon Meatballs/">Honey Bourbon Meatballs</a>
+	  <a href="recipes/KungPaoMeatballs/KungPaoMeatballs.html">KungPaoMeatballs</a>
+	  <a href="recipes/MexicanMeatballs/MexicanMeatballs.html">MexicanMeatballs</a>
+		
+    </div>
+  </div> 
+   
+	<a href="Signup.html">Mailing List Sign-up</a>
+		<div class="dropdown">
+        
+  </div> 
+		</div>
+</head>
+	
+<body>
+	&nbsp;
+	<form id="form1" name="form1" method="post" action="ProcessData">
+<h2>Join our Mailing List</h2>
+ <section class="container">
+  <div class="left-half">
+	<p>
+    <label>First Name</label>
+      <input name="fname" type="text" id="fname" class="left-half"/>
+	  
+	  <label>Address</label>
+      <input name="address" type="text" class="left-half" id="address" />
+       
+	  <label>State</label>
+      <input name="state" type="text" maxlength="2" size="2" class="left-half" id="state" />
+    
+		
+	  <label>Phone Number</label>
+      <input name="phonenumber" type="text" maxlength="10" size="10" class="left-half" id="phonenumber" />
+    
+		</p>
+    </div>
+  <div class="right-half">
+	<p>
+    <label>Last Name</label>
+      <input name="lname" type="text" class="right-half" id="lname" />    
+  
+	  <label>City </label>
+      <input name="city" type="text" class="right-half" id="city" />
+   		
+	  <label>Zip</label>
+      <input name="zip" type="text" maxlength="10" size="5" class="right-half" id="zip" />
+    
+		<label>Email</label>
+	  <input name="email" type="text" maxlength="25" size="25" class ="right-half" id="email"/>
+	  </p>
+	  </div>
+  	</section>
+	<p>
+	<label>
+      <input type="checkbox" name="DeliveryMethod" value="Pickup" id="Pickup" />
+      Coupon Signup</label>
+    
+    <label>
+      <input type="checkbox" name="DeliveryMethod" value="Delivery" id="Delivery" />
+      New Recipe Notifications</label>
+  </p>
+	<p>
+    <input type="submit" value="Submit" class="btn" onClick="Thanksmsg"/>
+  </p>	
+		<br/>
+	</form>
+   
+</body>
+</html>

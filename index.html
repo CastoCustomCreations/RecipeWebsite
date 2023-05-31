@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Recipes,Breakfasts,Lunch,Dinner,Desserts," content="Food, Recipes"/> 
+<script> language="javascript" type="text/javascript"</script>	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="Styles/IndexStyle.css"/>
+
+<title>Meatballs Galore!</title>
+<h1>Meatballs Galore!</h1>
+<!-- Mouse rollover image change-->
+<img src="Images/RecipeBox1_1.jpg" class ="logo" alt="Picture1&2"
+    
+         onmouseover="this.src='Images/RecipeBox2_1.jpg';"
+         onmouseout="this.src='Images/RecipeBox1_1.jpg';"/>
+	
+	<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Recipes
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	  <a href="BuffaloChickenMeatballs.html">Buffalo Chicken Meatballs</a>
+      <a href="ChickenCordonBleu.html">Chicken Cordon Bleu Meatballs</a>
+      <a href="FrenchOnionMeatballs.html">FrenchOnionMeatballs</a>
+	  <a href="HoneyBourbonMeatballs.html">Honey Bourbon Meatballs</a>
+	  <a href="KungPaoMeatballs.html">KungPaoMeatballs</a>
+	  <a href="MexicanMeatballs.html">MexicanMeatballs</a>
+		
+    </div>
+  </div> 
+ 
+	<a href="Signup.html">Mailing List Sign-up</a>
+		<div class="dropdown">
+        
+  </div> 
+		</div>
+
+</head>
+
+<body>
+
+<!--<script type = "text/javascript">
+function randomlinks(){
+    var myrandom=Math.round(Math.random()*6)
+    var links=new Array()
+    links[0]="this.src='KungPaoMeatballs.html'";
+    links[1]="this.src='BuffaloChickenMeatballs.html'";
+    links[2]="this.src='ChickenCordonBleu.html'";
+    links[3]="this.src='FrenchOnionMeatballs.html'";
+    links[4]="this.src='HoneyBourbonMeatballs.html'";
+    links[5]="this.src='MexicanMeatballs.html'";
+    
+    window.location=links[myrandom]
+}
+</script>-->
+<!--<form>
+<input type="button" value="random link!" onClick="randomlinks()">
+</form>-->	
+	
+	
+<div class="slideshow-container">
+	
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="Images/BuffaloChickenMeatballs.jpg" alt = "BCM" style="width:100%">
+  <div class="text">Buffalo Chicken Meatballs</div>
+</div>
+	
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="Images/chicken cordon bleu meatballs.jpg" alt = "CCBM" style="width:100%">
+  <div class="text">Chicken Cordon Bleu Meatballs</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="Images/FrenchOnionMeatballs.jpg" alt = "FO" style="width:100%">
+  <div class="text">French Onion Meatballs</div>
+</div>
+	
+	<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="Images/HoneyBourbonMeatballs.jpg" alt = "HBM" style="width:100%">
+  <div class="text">Honey Bourbon Meatballs</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="Images/KungPaoMeatballs.jpg" alt = "KPM" style="width:100%">
+  <div class="text">Kung Pao Meatballs</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="Images/MexicanMeatballs.jpg" alt = "MM" style="width:100%">
+  <div class="text">Mexican Meatballs</div>
+</div>
+	
+</div>
+
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
